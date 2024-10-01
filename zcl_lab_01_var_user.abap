@@ -37,7 +37,8 @@ CLASS zcl_lab_01_var_user DEFINITION
              age      TYPE i,
            END OF mty_customer.
 
-    DATA ms_employees TYPE snwd_employees.
+*    DATA ms_employees TYPE snwd_employees. " on premise
+     DATA ms_employees TYPE /dmo/employee_hr. " BTP
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
